@@ -568,17 +568,27 @@
         const goalCombined = mainGoalSelect ? `${mainGoalSelect} - ${goalDetailsText}` : `الهدف: ${goalDetailsText}`;
         
         // FINAL MESSAGE (exactly template + extra info for commitment & contact)
+      
         let finalMsg = `🔥 متدرب جديد:
 
+
 👤 الاسم: ${fullName}
+
 📏 الطول: ${height} سم
+
 ⚖️ الوزن: ${weight} كجم
+
 🎯 الهدف: ${goalCombined}
+
 📅 المدة: ${duration}
 
+
 🏋️ الخبرة: ${experienceStr}
+
 ❤️ الحالة الصحية: ${healthStr}
+
 🍽️ التغذية: ${nutritionStr}
+
 🛌 النوم: ${lifestyleStr}
 
 🔥 الهدف الحقيقي:
@@ -587,7 +597,10 @@ ${whyGoal}
 ⚠️ التحديات:
 ${challenge}
 
-📞 للتواصل: ${phone} | العمر: ${age} | الجنس: ${gender}
+📞 للتواصل: ${phone} | العمر: ${age} 
+
+  الجنس: ${gender}
+
 ⏱️ الالتزام: ${commitmentStr}`;
         
         return finalMsg;
