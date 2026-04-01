@@ -3,242 +3,293 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>كوتش [اكتب الاسم] | مدرب كمال أجسام محترف</title>
+    <title>[اسم المدرب] | Elite Bodybuilding Coach</title>
     <meta
       name="description"
-      content="الموقع الشخصي لمدرب كمال الأجسام [اكتب الاسم] من [اكتب الدولة] بخبرة [عدد السنوات] في التدريب، البطولات، والتحول الرياضي."
+      content="الهوية الرسمية للمدرب [اسم المدرب] — مدرب كمال أجسام احترافي للتضخيم والتنشيف والتدريب الأونلاين بخطط دقيقة ونتائج قوية."
     />
+    <meta name="keywords" content="Bodybuilding, Personal Trainer, تضخيم, تنشيف, تدريب أونلاين" />
+    <meta name="author" content="[اسم المدرب]" />
+    <meta name="theme-color" content="#080808" />
+    <meta property="og:title" content="[اسم المدرب] | Elite Coach" />
+    <meta property="og:description" content="ابنِ جسمًا قويًا بعقلية الأبطال مع مدرب محترف." />
     <meta
-      name="keywords"
-      content="كمال أجسام, مدرب شخصي, بطولات, تدريب, Fitness Coach, Bodybuilding"
+      property="og:image"
+      content="https://images.unsplash.com/photo-1534367610501-26aa4fcf43b7?auto=format&fit=crop&w=1600&q=80"
     />
-    <meta name="author" content="[اكتب الاسم]" />
-    <meta property="og:title" content="كوتش [اكتب الاسم] | مدرب كمال أجسام" />
-    <meta
-      property="og:description"
-      content="تعرف على خبرات وإنجازات [اكتب الاسم] في عالم كمال الأجسام." 
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80" />
+
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="scrollProgress" aria-hidden="true"></div>
+
     <header class="site-header">
-      <nav class="nav container" aria-label="القائمة الرئيسية">
-        <a href="#home" class="brand">[اكتب الاسم]</a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
-        <ul id="nav-links" class="nav-links">
+      <nav class="container navbar" aria-label="التنقل الرئيسي">
+        <a href="#hero" class="brand">كابتن احمد العزاوي</a>
+
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-label="فتح القائمة">
+          ☰
+        </button>
+
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#hero">الرئيسية</a></li>
           <li><a href="#about">نبذة عني</a></li>
-          <li><a href="#journey">مسيرتي</a></li>
+          <li><a href="#journey">المسيرة</a></li>
           <li><a href="#championships">البطولات</a></li>
           <li><a href="#medals">المداليات</a></li>
-          <li><a href="#gallery">الصور</a></li>
-          <li><a href="#contact">تواصل</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#featured-videos">فيديوات مميزة</a></li>
+          <li><a href="#contact">التواصل</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="home" class="hero reveal">
+      <!-- 1) HERO SECTION -->
+      <section id="hero" class="hero reveal">
+        <video class="hero-video" autoplay muted loop playsinline poster="images/11.jpg">
+          <source src="images/v3.mp4" type="video/mp4" />
+        </video>
+        <img
+          class="hero-fallback"
+          src="images/10.jpg"
+          alt="مدرب كمال أجسام"
+          fetchpriority="high"
+        />
         <div class="hero-overlay"></div>
-        <div class="hero-content container">
-          <p class="hero-kicker">مدرب كمال أجسام | [اكتب الدولة]</p>
-          <h1>كوتش [اكتب الاسم]</h1>
-          <p class="hero-subtitle">حول قوتك إلى أسلوب حياة، وانطلق نحو نسخة أقوى منك كل يوم.</p>
-          <p class="hero-experience">خبرة: <strong>[عدد السنوات] سنوات</strong> في التدريب والتأهيل البدني.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">ابدأ الآن</a>
-            <a href="#about" class="btn btn-outline">تعرف عليّ</a>
+
+        <div class="container hero-content glass">
+          <p class="eyebrow">[العراق] • Elite Strength Coaching</p>
+          <h1>قوة حقيقية. انضباط يومي. نتائج نخبوية.</h1>
+          <p class="lead">
+            أنا <strong>[ الكابتن احمد عبد الستار ]</strong>، متخصص في
+            <strong>  مدرب متخصص في بناء الأجسام القوية والمتناسقة.
+سواء هدفك تضخيم، تنشيف، أو تغيير كامل لنمط حياتك…
+أنا أقدّم لك نظام تدريب وغذاء مصمم خصيصًا لك،
+ليحوّلك إلى أفضل نسخة من نفسك  قوة، ثقة، وانضباط.</strong> <strong></strong>.
+           
+          </p>
+          <div class="hero-cta">
+            <a href="tell.html" class="btn btn-primary">ابدأ التدريب الآن</a>
+            <a href="#contact" class="btn btn-outline">تواصل معي</a>
           </div>
+
+          
         </div>
       </section>
 
+      <!-- 2) ABOUT -->
       <section id="about" class="section reveal">
         <div class="container about-grid">
+          <figure class="panel profile-card tilt-card">
+            <img
+              loading="lazy"
+              src="images/3.jpg"
+              alt="الصورة الاحترافية للمدرب"
+            />
+          </figure>
+
           <div>
             <h2>نبذة عني</h2>
             <p>
-              أنا الكوتش <strong>[اكتب الاسم]</strong> من <strong>[اكتب الدولة]</strong>، مختص في بناء الأجسام
-              الاحترافية، برامج التضخيم والتنشيف، وتحسين الأداء الرياضي بطريقة علمية وعملية.
+              مدرب كمال أجسام محترف أدمج بين علم التدريب، الانضباط العملي، والتحفيز اليومي لبناء جسم قوي ومتناسق.
+              أعمل معك وفق قياسات ومؤشرات أداء، وليس مجرد تخمينات.
             </p>
             <p>
-              على مدار <strong>[عدد السنوات] سنوات</strong>، ساعدت العديد من المتدربين على الوصول إلى أهدافهم
-              من خلال خطط تدريب شخصية، متابعة دقيقة، ونمط حياة متوازن.
+              أسلوبي يعتمد على برنامج واضح، متابعة مستمرة، وتدرج ذكي في الأحمال لتحقيق أقصى نتيجة بأمان.
             </p>
-            <ul class="highlights">
-              <li>برامج تدريب فردية مخصصة حسب الهدف.</li>
-              <li>متابعة تغذية وقياس تطور أسبوعي.</li>
-              <li>تجهيز للبطولات والمسرح الاحترافي.</li>
-            </ul>
+
+            <div class="stats-grid">
+              <article class="panel stat">
+                <h3 data-counter="5">0</h3>
+                <p>سنوات الخبرة</p>
+              </article>
+              <article class="panel stat">
+                <h3 data-counter="20">0</h3>
+                <p>عدد العملاء</p>
+              </article>
+              <article class="panel stat">
+                <h3 data-counter="12">0</h3>
+                <p>عدد البطولات</p>
+              </article>
+            </div>
           </div>
-          <figure class="about-photo card">
-            <img
-              loading="lazy"
-              src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80"
-              alt="صورة المدرب"
-            />
-          </figure>
         </div>
       </section>
 
+      <!-- 3) CAREER + MISSION -->
       <section id="journey" class="section section-dark reveal">
         <div class="container">
-          <h2>مسيرتي المهنية وهدفي الشخصي</h2>
+          <h2>مسيرتي المهنية وهدفي</h2>
+
           <div class="timeline">
-            <article class="timeline-item card">
-              <h3>البداية</h3>
-              <p>اكتشفت شغفي بكمال الأجسام، وبدأت رحلة تطوير نفسي علميًا وبدنيًا.</p>
-            </article>
-            <article class="timeline-item card">
-              <h3>الاحتراف</h3>
-              <p>شاركت في بطولات محلية وإقليمية، وحققت مراكز متقدمة.</p>
-            </article>
-            <article class="timeline-item card">
-              <h3>بناء العلامة الشخصية</h3>
-              <p>أسست منهج تدريبي خاص يجمع بين القوة، الجمالية، والانضباط.</p>
-            </article>
-            <article class="timeline-item card">
-              <h3>الهدف المستقبلي</h3>
-              <p>صناعة أبطال جدد ورفع مستوى اللياقة في المجتمع الرياضي العربي.</p>
-            </article>
+            <article class="panel timeline-item"><span>🏁</span><h3>البداية</h3><p>انطلقت من شغف حقيقي بالحديد والالتزام اليومي.</p></article>
+            <article class="panel timeline-item"><span>📈</span><h3>التطور</h3><p>تعلمت البرمجة التدريبية المتقدمة وبنيت منهجًا خاصًا.</p></article>
+            <article class="panel timeline-item"><span>🥇</span><h3>أول بطولة</h3><p> سنة 2022 حققت أول منصة تتويج وبدأت التحضير للمستوى الأعلى </p></article>
+            <article class="panel timeline-item"><span>👑</span><h3>الإنجازات القادمة</h3><p> التحضير للتنافس في بطولة مستر اولمبيا العالمية والحصول على مراكز متقدمة </p></article>
           </div>
+
+          <blockquote class="panel mission">
+            "رسالتي: بناء أبطال يملكون القوة والثقة والانضباط داخل وخارج الجيم."
+          </blockquote>
         </div>
       </section>
 
+      <!-- 4) CHAMPIONSHIPS -->
       <section id="championships" class="section reveal">
         <div class="container">
-          <h2>قسم البطولات</h2>
-          <div class="table-wrap card">
-            <table>
-              <thead>
-                <tr>
-                  <th>البطولة</th>
-                  <th>المركز</th>
-                  <th>التاريخ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>بطولة النخبة لكمال الأجسام</td>
-                  <td>المركز الأول 🥇</td>
-                  <td>2022-05-10</td>
-                </tr>
-                <tr>
-                  <td>بطولة القوة الذهبية</td>
-                  <td>المركز الثاني 🥈</td>
-                  <td>2023-09-18</td>
-                </tr>
-                <tr>
-                  <td>بطولة المحترفين الإقليمية</td>
-                  <td>المركز الأول 🥇</td>
-                  <td>2024-11-02</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="section-head">
+            <h2>البطولات</h2>
+            
+          </div>
+
+          <div class="cards-grid championships-grid">
+
+            <article class="panel champ-card" data-tags="2024 regional">
+              <img loading="lazy" src="images/111.jpg" alt="بطولة المحترفين" />
+              <div><h3>بطولة دبي برو العالمية</h3><p>المركز الأول 🥇</p><small>نوفمبر 2025</small></div>
+            </article>
+
+            <article class="panel champ-card" data-tags="2025 regional">
+              <img loading="lazy" src="images/133.jpg" alt="بطولة الأبطال" />
+              <div><h3>بطولة بطل الأبطال العراق</h3><p>المركز الأول و كارت احتراف🥇</p><small>مارس 2024</small></div>
+            </article>
+            <article class="panel champ-card" data-tags="2024 regional">
+              <img loading="lazy" src="images/222.jpg" alt="بطولة المحترفين" />
+              <div><h3>بطولة العالمية في تونس</h3><p> حصولي المركزين الأول وكارت احتراف ifpp🥇</p><small>نوفمبر 2025</small></div>
+            </article>
+            <article class="panel champ-card" data-tags="2025">
+              <img loading="lazy" src="images/7.jpg" alt="كأس النخبة" />
+              <div><h3>تمثيل المنتخب الوطني العراقي </h3><p>المركز الثاني 🥈</p><small>يناير 2024</small></div>
+            </article>
           </div>
         </div>
       </section>
 
+      <!-- 5) MEDALS -->
       <section id="medals" class="section section-dark reveal">
         <div class="container">
           <h2>معرض المداليات</h2>
-          <div class="grid medals-grid">
-            <button class="image-card" data-lightbox="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1400&q=80" aria-label="عرض الميدالية الأولى">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=70" alt="ميدالية ذهبية" />
+          <div class="cards-grid medals-grid">
+            <button class="panel medal-card" data-lightbox-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1800&q=80" data-caption="بطولة الأبطال — 2025">
+              <img loading="lazy" src="images/699.jpg" alt="ميدالية ذهبية" />
             </button>
-            <button class="image-card" data-lightbox="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80" aria-label="عرض الميدالية الثانية">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=70" alt="ميدالية فضية" />
+            <button class="panel medal-card" data-lightbox-src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=80" data-caption="بطولة المحترفين — 2024">
+              <img loading="lazy" src="images/699.jpg" alt="ميدالية فضية" />
             </button>
-            <button class="image-card" data-lightbox="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1400&q=80" aria-label="عرض الميدالية الثالثة">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=70" alt="ميدالية برونزية" />
+            <button class="panel medal-card" data-lightbox-src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1800&q=80" data-caption="كأس النخبة — 2025">
+              <img loading="lazy" src="images/888.jpg" alt="ميدالية برونزية" />
             </button>
           </div>
         </div>
       </section>
 
+      <!-- 6) PHOTO + VIDEO GALLERY -->
       <section id="gallery" class="section reveal">
         <div class="container">
-          <h2>معرض الصور</h2>
-          <div class="grid photo-grid">
-            <article class="card photo-card">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=900&q=80" alt="تمرين رفع الأثقال" />
-              <div class="photo-info">
-                <h3>جلسة قوة</h3>
-                <p>تركيز على تقنيات الرفع الصحيحة لبناء كتلة عضلية قوية.</p>
-              </div>
+          <h2>معرض الصور والفيديو</h2>
+          <div class="masonry-grid">
+            <article class="panel media-card tall">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1534367610501-26aa4fcf43b7?auto=format&fit=crop&w=1300&q=70" alt="صورة تدريب" />
+              <div><h3>تمرين قوة</h3><p>جلسة شدة عالية لبناء الانفجار العضلي.</p></div>
             </article>
-            <article class="card photo-card">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" alt="تدريب احترافي" />
-              <div class="photo-info">
-                <h3>تحضير بطولات</h3>
-                <p>برنامج مكثف لرفع الجاهزية البدنية قبل المسابقات.</p>
-              </div>
+            <article class="panel media-card">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1300&q=70" alt="صورة قبل وبعد" />
+              <div><h3>قبل / بعد</h3><p>تحول واضح في الكتلة العضلية ونسبة الدهون.</p></div>
             </article>
-            <article class="card photo-card">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?auto=format&fit=crop&w=900&q=80" alt="تدريب عضلات" />
-              <div class="photo-info">
-                <h3>تدريب الكثافة</h3>
-                <p>تمارين مركبة لزيادة القوة والتحمل وتحسين الأداء العام.</p>
-              </div>
+            <article class="panel media-card">
+              <video controls muted autoplay loop preload="none" poster="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=70">
+                <source src="videos/training-highlight-1.mp4" type="video/mp4" />
+              </video>
+              <div><h3>فيديو تقني</h3><p>تصحيح تكنيك الرفع لتحقيق أفضل أداء.</p></div>
+            </article>
+            <article class="panel media-card tall">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=1300&q=70" alt="تدريب احترافي" />
+              <div><h3>جلسة تحضير</h3><p>خطوات دقيقة قبل المنافسات الرسمية.</p></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section section-dark reveal">
+      <!-- 7) FEATURED VIDEOS -->
+      <section id="featured-videos" class="section section-dark reveal">
+        <div class="container">
+          <h2>فيديوات مميزة</h2>
+          <div class="cards-grid featured-videos-grid">
+            <article class="panel video-card"><iframe loading="lazy" src="https://www.youtube.com/embed/2tM1LFFxeKg" title="Training motivation" allowfullscreen></iframe><p>Motivation 01</p></article>
+            <article class="panel video-card"><iframe loading="lazy" src="https://www.youtube.com/embed/U0bhE67HuDY" title="Bodybuilding highlights" allowfullscreen></iframe><p>Highlights 02</p></article>
+            <article class="panel video-card"><iframe loading="lazy" src="https://www.youtube.com/embed/y0wgP87-lLw" title="Strength workout" allowfullscreen></iframe><p>Strength 03</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8) CONTACT -->
+      <section id="contact" class="section reveal">
         <div class="container contact-grid">
           <div>
             <h2>تواصل معي</h2>
-            <p>جاهز تبدأ رحلتك؟ أرسل رسالتك الآن وسأقوم بالرد عليك في أقرب وقت.</p>
+            <p>إذا كنت جادًا في التغيير، ابدأ الآن وسنضع لك خطة تدريب ونتائج واضحة.</p>
             <div class="social-links">
               <a href="#" aria-label="Instagram">Instagram</a>
               <a href="#" aria-label="TikTok">TikTok</a>
               <a href="#" aria-label="Facebook">Facebook</a>
             </div>
           </div>
-          <form class="contact-form card" aria-label="نموذج التواصل">
+
+          <form id="contactForm" class="panel contact-form" novalidate>
             <label for="name">الاسم</label>
-            <input id="name" name="name" type="text" placeholder="اكتب اسمك" required />
+            <input id="name" name="name" type="text" required minlength="2" placeholder="اكتب اسمك" />
+            <small id="nameError" class="error"></small>
 
             <label for="email">الإيميل</label>
-            <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+            <input id="email" name="email" type="email" required placeholder="name@example.com" />
+            <small id="emailError" class="error"></small>
 
             <label for="message">الرسالة</label>
-            <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="اكتب هدفك الرياضي..."></textarea>
+            <small id="messageError" class="error"></small>
 
             <button type="submit" class="btn btn-primary">إرسال</button>
+            <p id="formSuccess" class="success" aria-live="polite"></p>
           </form>
         </div>
       </section>
     </main>
 
+    <!-- 9) FOOTER -->
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <h3>[اكتب الاسم]</h3>
-          <p>مدرب كمال أجسام محترف - [اكتب الدولة]</p>
+          <h3>[اسم المدرب]</h3>
+          <p>[الدولة] — Elite Bodybuilding Coach</p>
         </div>
         <div>
           <h4>روابط سريعة</h4>
           <ul>
             <li><a href="#about">نبذة عني</a></li>
             <li><a href="#championships">البطولات</a></li>
+            <li><a href="#gallery">المعرض</a></li>
             <li><a href="#contact">التواصل</a></li>
           </ul>
         </div>
         <div>
           <h4>معلومات الاتصال</h4>
-          <p>📧 coach@example.com</p>
-          <p>📱 +000 000 000</p>
+          <p>coach@example.com</p>
+          <p>+000 000 000</p>
+          <p>متاح يوميًا 10AM - 8PM</p>
         </div>
       </div>
-      <p class="copyright">© 2026 جميع الحقوق محفوظة - [اكتب الاسم]</p>
+      <p class="copyright">© 2026 جميع الحقوق محفوظة — [اسم المدرب]</p>
     </footer>
 
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox-close" aria-label="إغلاق">×</button>
-      <img src="" alt="عرض الصورة بالحجم الكامل" />
+    <a class="whatsapp-float" href="https://wa.me/+9647703487234" target="_blank" rel="noopener" aria-label="واتساب">🟢</a>
+    <button id="toTop" class="to-top" aria-label="العودة للأعلى">↑</button>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightboxClose" class="lightbox-close" aria-label="إغلاق">×</button>
+      <img id="lightboxImage" src="" alt="صورة مكبرة" />
+      <p id="lightboxCaption"></p>
     </div>
 
     <script src="script.js"></script>
